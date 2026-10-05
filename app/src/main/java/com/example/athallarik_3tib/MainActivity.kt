@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.athallarik_3tib.databinding.ActivityLoginBinding
 import com.example.athallarik_3tib.databinding.ActivityMainBinding
+import com.example.athallarik_3tib.pertemuan5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -22,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -61,10 +61,12 @@ class MainActivity : AppCompatActivity() {
                 .setCancelable(false)
                 .show()
         }
-
 //        back (stack)
         binding.btnBck.setOnClickListener{
             finish()
+        }
+        binding.btnToLima.setOnClickListener {
+            startActivity(Intent(this, LimaActivity::class.java))
         }
 
 
