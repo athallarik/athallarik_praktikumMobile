@@ -90,6 +90,9 @@
 
 
     </com.google.android.material.card.MaterialCardView>
+
+
+
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridMenu"
         android:layout_width="0dp"
@@ -147,6 +150,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnToTenth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 10"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.gridlayout.widget.GridLayout>
 
