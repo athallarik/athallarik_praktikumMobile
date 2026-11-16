@@ -88,12 +88,11 @@ class TabCFragment : Fragment() {
                 Toast.LENGTH_SHORT
             ).show()
         }
-//        binding.rvProducts.apply {
+        binding.rvProducts.apply {
 //// Mode Grid 2 kolom
 //            layoutManager = GridLayoutManager(requireContext(), 2)
 //// Jika ingin mode Linear:
  layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
             adapter = productAdapter
         }
-    }
-}
+    }}
